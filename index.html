@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Editor</title>
+</head>
+<body style="margin:0;padding:0;">
+    <textarea id="texts" style="width:100vw;height:100vh;margin:0;border:none;padding:0.1rem;"></textarea>
+    <div style="position:fixed;top:0;right:0;opacity:0.5"><button onclick="saveFile();">Save</button><button onclick="loadFile()">Open</button></div>
+    <script>window.onerror = function(msg, url, linenumber) {
+        alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+        return true;
+    }</script>
+    <script src="index.js"></script>
+</body>
+</html>
